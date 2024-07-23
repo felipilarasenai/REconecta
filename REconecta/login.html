@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon">
+</head>
+
+<body class="body-login">
+    <nav class="nav">
+        <div class="nav-logo">
+            <a href="./index.html"><img src="./Assets/logo-header.png" alt="Logo"></a>
+        </div>
+
+        <div class="nav-menu">
+            <ul>
+                <li><a class="link active" href="./index.html">Home</a></li>
+                <li><a class="link" href="./cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <form class="container-login">
+
+        <h1 class="login-h1">Login</h1>
+        <input class="inp-login" type="text" id="username" placeholder="Digite o seu nome de usuario" required>
+        <input class="inp-login" type="password" id="password" placeholder="Digite a sua senha" required>
+
+        <button class="button-logar" onclick="logar()">Entrar</button>
+
+    </form>
+    <div class="img-login">
+        <img src="./assets/img-login.jfif">
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

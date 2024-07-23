@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body class="body-anuncios">
+    <nav class="nav">
+        <div class="nav-logo">
+            <a href="./index.html"><img src="./Assets/logo-header.png" alt="Logo"></a>
+        </div>
+
+        <div class="nav-menu">
+            <ul>
+                <li><a class="link" href="./cadastro.html">Cadastre-se</a></li>
+                <li><a class="link" href="./login.html">Entrar</a></li>
+                <li><a href="./carrinho.html"><img class="carrinho" src="./assets/carrinho-pgn.png" alt="carrinho-pgn"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-lista">
+        <h1>Cadastro de Produtos</h1>
+        <form id="productForm">
+            <div class="form-group">
+                <label for="productName">Nome do Produto:</label>
+                <input type="text" id="productName" name="productName" required>
+            </div>
+            <div class="form-group">
+                <label for="productDescription">Descrição:</label>
+                <textarea id="productDescription" name="productDescription" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="productType">Tipo:</label>
+                <select id="productType" name="productType" required>
+                    <option value="">Selecione o tipo</option>
+                    <option value="cadeira">Cadeira</option>
+                    <option value="sofa">Sofá</option>
+                    <option value="mesa">Mesa</option>
+                    <option value="comoda">Cômoda</option>
+                    <!-- Adicione outras opções conforme necessário -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="productImage">Imagem:</label>
+                <input type="file" id="productImage" name="productImage" accept="image/*">
+            </div>
+            <button type="submit">Cadastrar Produto</button>
+        </form>
+    </div>
+
+    <script src="anuncios.js"></script>
+</body>
+
+</html>

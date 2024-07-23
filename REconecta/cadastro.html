@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="body-cadastro">
+
+    <nav class="nav">
+        <div class="nav-logo">
+            <a href="./index.html"><img src="./Assets/logo-header.png" alt="Logo"></a>
+        </div>
+            
+        <div class="nav-menu">
+            <ul>
+                <li><a class="link active" href="./index.html">Home</a></li>
+                <li><a class="link" href="./login.html">Entrar</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <form class="container-cadastro">
+        
+        <h1 class="cadastro-h1">Cadastro</h1>
+        <input class="inp-cadastro" type="text"  id="new-username" placeholder="Digite o seu nome de usuario" required>
+        <input class="inp-cadastro" type="email" id="email" placeholder="Digite o seu email">
+        <input class="inp-cadastro" type="password"  id="new-password" placeholder="Digite a sua senha" required>
+        <input class="inp-cadastro" type="password"  id="rep-password" placeholder="repita a sua senha" required>
+        
+        <button class="button-cadastro" onclick="cadastrar()">Cadastre-se</button>
+        
+        <p class="paragraph-cadastro"><a href="./login.html">já tenho uma conta</a></p>
+        
+    </form>
+    <div class="img-casdastro">
+        <img src="./assets/img-cadastro.jfif">
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
